@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>server copy – Hizmet Koşulları</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --ink: #1c2330;
+  --muted: #5a6475;
+  --accent: #4752c4;
+  --panel: #eef0fb;
+  --rule: #d9dde6;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14161b;
+    --ink: #e6e8ee;
+    --muted: #a0a8b8;
+    --accent: #9aa3ff;
+    --panel: #1d2030;
+    --rule: #2c3140;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14161b;
+  --ink: #e6e8ee;
+  --muted: #a0a8b8;
+  --accent: #9aa3ff;
+  --panel: #1d2030;
+  --rule: #2c3140;
+  color-scheme: dark;
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.25rem; margin: 2.25rem 0 0.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
+p, ul { margin: 0.6rem 0; }
+ul { padding-left: 1.25rem; }
+li { margin: 0.3rem 0; }
+.meta { color: var(--muted); margin: 0 0 1.75rem; }
+.summary { background: var(--panel); border-left: 4px solid var(--accent); padding: 0.9rem 1.1rem; border-radius: 0 6px 6px 0; }
+.summary p { margin: 0; }
+code { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 0.92em; background: var(--panel); padding: 0.1em 0.35em; border-radius: 4px; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>server copy – Hizmet Koşulları</h1>
+<p class="meta">Son güncelleme: 18 Ekim 2026</p>
+
+<div class="summary">
+<p>server copy’yi yalnızca sahibi olduğunuz veya kopyalama izniniz bulunan sunucularda kullanın. Başkasının sunucusunu izinsiz kopyalamak yasaktır.</p>
+</div>
+
+<h2>Koşulların kabulü</h2>
+<p>server copy botunu bir sunucuya ekleyerek veya komutlarını kullanarak bu koşulları kabul etmiş olursunuz. Kabul etmiyorsanız botu kullanmayın ve sunucunuzdan çıkarın.</p>
+
+<h2>Hizmetin kapsamı</h2>
+<p>Bot, bir sunucunun yapısını (roller, kategoriler, kanallar ve rollere göre izinler) yedekler veya başka bir sunucuya kopyalar. Mesajlar, üyeler, botlar, emojiler, çıkartmalar ve sunucu simgesi kopyalanmaz. Komutlar: <code>!yedekle</code>, <code>!yukle</code> ve <code>!kopyala</code>.</p>
+
+<h2>Kullanım kuralları</h2>
+<ul>
+<li>Botu yalnızca sahibi olduğunuz ya da sahibinden açık izin aldığınız sunucuları kopyalamak için kullanın.</li>
+<li>Komutları yalnızca yönetici yetkisi olan kişiler kullanabilir. <code>!kopyala</code> için her iki sunucuda da yönetici olmanız gerekir.</li>
+<li>Discord’un Hizmet Şartları’na ve Topluluk Kurallarına uymak zorundasınız.</li>
+<li>Botu yasa dışı, zararlı veya başkalarının haklarını ihlal eden içeriklerin çoğaltılması ya da botu kötüye kullanmak için kullanmayın.</li>
+</ul>
+
+<h2>Çalışma şekli ve sınırlar</h2>
+<p>Bot, hedef sunucudaki mevcut rol ve kanalları silmez; yalnızca yenilerini ekler. Bu yüzden önemli bir sunucuda denemeden önce boş bir test sunucusunda denemeniz önerilir. Discord’un kısıtlamaları (hız sınırları, boost seviyesi, kanal ve rol sayısı limitleri) nedeniyle bazı ögeler eksik kopyalanabilir veya işlem yavaşlayabilir.</p>
+
+<h2>Garanti ve sorumluluk</h2>
+<p>Bot “olduğu gibi” sunulur ve kesintisiz ya da hatasız çalışacağına dair bir garanti verilmez. Botun kullanımından doğan veri kaybı, düzensiz sunucu yapısı veya başka zararlardan, yasaların izin verdiği ölçüde, bot geliştiricisi sorumlu tutulamaz. Kullanımdan doğan sorumluluk, komutu çalıştıran yöneticiye aittir.</p>
+
+<h2>Erişimin sonlandırılması</h2>
+<p>Botu istediğiniz zaman sunucunuzdan çıkarabilirsiniz. Koşulların ihlal edildiği durumlarda botun belirli sunucu veya kullanıcılar için erişimi kısıtlama hakkı saklıdır.</p>
+
+<h2>Gizlilik</h2>
+<p>Verilerin nasıl işlendiği <a href="https://claude.ai/artifact/BhiTzj854BwzdPFnykQHWy">Gizlilik Politikası</a> sayfasında açıklanmıştır.</p>
+
+<h2>Değişiklikler</h2>
+<p>Bu koşullar güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanır ve en üstteki tarih değiştirilir. Güncellemeden sonra botu kullanmaya devam etmeniz yeni koşulları kabul ettiğiniz anlamına gelir.</p>
+
+<h2>İletişim</h2>
+<p>Sorularınız için: <strong>Discord: baghwandawinsahra</strong></p>
+</main>
+</body>
+</html>

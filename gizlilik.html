@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>server copy – Gizlilik Politikası</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --ink: #1c2330;
+  --muted: #5a6475;
+  --accent: #4752c4;
+  --panel: #eef0fb;
+  --rule: #d9dde6;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14161b;
+    --ink: #e6e8ee;
+    --muted: #a0a8b8;
+    --accent: #9aa3ff;
+    --panel: #1d2030;
+    --rule: #2c3140;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14161b;
+  --ink: #e6e8ee;
+  --muted: #a0a8b8;
+  --accent: #9aa3ff;
+  --panel: #1d2030;
+  --rule: #2c3140;
+  color-scheme: dark;
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.25rem; margin: 2.25rem 0 0.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
+p, ul { margin: 0.6rem 0; }
+ul { padding-left: 1.25rem; }
+li { margin: 0.3rem 0; }
+.meta { color: var(--muted); margin: 0 0 1.75rem; }
+.summary { background: var(--panel); border-left: 4px solid var(--accent); padding: 0.9rem 1.1rem; border-radius: 0 6px 6px 0; }
+.summary p { margin: 0; }
+code { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 0.92em; background: var(--panel); padding: 0.1em 0.35em; border-radius: 4px; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>server copy – Gizlilik Politikası</h1>
+<p class="meta">Son güncelleme: 18 Ekim 2026</p>
+
+<div class="summary">
+<p>server copy, kişisel veri toplamaz ve saklamaz. Bot yalnızca bir yönetici komut yazdığında sunucunun yapısını (roller, kategoriler, kanallar ve izinler) okur, işlemi yapar ve bu bilgiyi kalıcı olarak tutmaz.</p>
+</div>
+
+<h2>Botun ne yaptığı</h2>
+<p>server copy, bir Discord sunucusunun yapısını yedekleyen veya başka bir sunucuya kopyalayan bir Discord botudur. Üç komutla çalışır: <code>!yedekle</code>, <code>!yukle</code> ve <code>!kopyala</code>. Bu komutları yalnızca sunucuda yönetici yetkisi olan kişiler kullanabilir.</p>
+
+<h2>Eriştiği veriler</h2>
+<p>Bir komut çalıştırıldığında bot şu sunucu bilgilerini okur:</p>
+<ul>
+<li>Sunucu adı</li>
+<li>Rollerin adı, rengi, izinleri ve görünüm ayarları</li>
+<li>Kategori ve kanal adları, kanal konuları, kanal ayarları</li>
+<li>Rollere göre kanal ve kategori izinleri</li>
+</ul>
+<p>Bot; üyelerin listesini, kullanıcı adlarını, profil bilgilerini, özel mesajlarını veya sunucudaki mesaj geçmişini okumaz ve kopyalamaz.</p>
+<p>Botun Discord’dan aldığı “mesaj içeriği” izni, yalnızca <code>!</code> ile başlayan komutları ve onay yanıtı olan <code>evet</code> mesajını tanımak için kullanılır. Komut dışındaki mesajlar işlenmez ve kaydedilmez.</p>
+
+<h2>Verilerin kullanımı ve saklanması</h2>
+<p>Okunan sunucu bilgileri yalnızca istenen yedekleme veya kopyalama işlemini yapmak için kullanılır ve işlem sırasında geçici olarak belleğte tutulur. Bot bir veritabanı kullanmaz ve kalıcı kayıt (log) dosyası tutmaz.</p>
+<p><code>!yedekle</code> komutunda hazırlanan yedek dosyası, komutu yazan yöneticiye Discord üzerinden özel mesajla gönderilir. Botun bu dosyanın bir kopyası yoktur. Dosya, Discord’daki özel mesaj geçmişinizde ve indirdiğiniz yerde kalır; bunlar sizin sorumluluğunuzdadır.</p>
+
+<h2>Paylaşım</h2>
+<p>Bot hiçbir veriyi üçüncü taraflarla paylaşmaz, satmaz veya reklam amacıyla kullanmaz. Bot yalnızca Discord’un resmî arayüzü (API) üzerinden Discord ile iletişim kurar. Discord’un veri işleme kuralları için <a href="https://discord.com/privacy">Discord Gizlilik Politikası</a> geçerlidir.</p>
+
+<h2>Yetkiler ve izin</h2>
+<p><code>!kopyala</code> komutunda kaynak sunucunun yapısını kopyalamak için, komutu yazan kişinin hem kaynak hem hedef sunucuda yönetici yetkisine sahip olması gerekir. Bot, yetkisi olmayan kişilerin komutlarını reddeder. Botu bir sunucuya yalnızca o sunucuda gerekli yetkisi olan kişiler ekleyebilir.</p>
+
+<h2>Erişimi sonlandırma</h2>
+<p>Botu sunucudan çıkardığınızda bot o sunucuya erişemez. Bot veri saklamadığı için ayrıca silinecek bir kayıt yoktur. Aldığınız yedek dosyalarını istediğiniz zaman kendiniz silebilirsiniz.</p>
+
+<h2>Değişiklikler</h2>
+<p>Bu politika güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanır ve en üstteki tarih değiştirilir.</p>
+
+<h2>İletişim</h2>
+<p>Gizlilikle ilgili sorularınız için: <strong>Discord: baghwandawinsahra</strong></p>
+</main>
+</body>
+</html>
